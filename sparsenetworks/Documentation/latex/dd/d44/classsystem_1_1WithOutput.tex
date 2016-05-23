@@ -1,0 +1,83 @@
+\hypertarget{classsystem_1_1WithOutput}{\section{system.\-With\-Output Class Reference}
+\label{classsystem_1_1WithOutput}\index{system.\-With\-Output@{system.\-With\-Output}}
+}
+Inheritance diagram for system.\-With\-Output\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/d44/classsystem_1_1WithOutput}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsystem_1_1WithOutput_a60b38b97c97568583fc2cf54cb7e8678}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classsystem_1_1WithOutput_abeb008bf9930662467931e61a741b763}{run}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsystem_1_1WithOutput_af6dac20f0117ff620ec5d157ff223377}{{\bfseries parameters}}\label{classsystem_1_1WithOutput_af6dac20f0117ff620ec5d157ff223377}
+
+\item 
+\hypertarget{classsystem_1_1WithOutput_a272fee7b8df6177d883f0d257628eeff}{{\bfseries n\-\_\-files}}\label{classsystem_1_1WithOutput_a272fee7b8df6177d883f0d257628eeff}
+
+\item 
+\hypertarget{classsystem_1_1WithOutput_adc7afae162437b6c0e4d15434e6ac625}{{\bfseries outputs}}\label{classsystem_1_1WithOutput_adc7afae162437b6c0e4d15434e6ac625}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}WithOutput inherits the class System. It is very similar, but has some functionalities implemented to write data generated during a simulation to an output folder. Furthermore, it displays some more output on the command line when the simulation is running (progress bar).
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsystem_1_1WithOutput_a60b38b97c97568583fc2cf54cb7e8678}{\index{system\-::\-With\-Output@{system\-::\-With\-Output}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!system::WithOutput@{system\-::\-With\-Output}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-With\-Output.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{N = {\ttfamily np.array(\mbox{[}400,100\mbox{]}}, }
+\item[{}]{J\-\_\-int = {\ttfamily np.array(\mbox{[}\mbox{]})}, }
+\item[{}]{I = {\ttfamily \mbox{[}1.}, }
+\item[{}]{gamma = {\ttfamily \mbox{[}0.2}, }
+\item[{}]{K = {\ttfamily 50}, }
+\item[{}]{tau = {\ttfamily 0.05}, }
+\item[{}]{N\-\_\-ext = {\ttfamily \mbox{[}\mbox{]}}, }
+\item[{}]{J\-\_\-ext = {\ttfamily np.array(\mbox{[}\mbox{]})}, }
+\item[{}]{rates = {\ttfamily \mbox{[}\mbox{]}}}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1WithOutput_a60b38b97c97568583fc2cf54cb7e8678}
+\begin{DoxyVerb}Initializes a 'WithOutput'-object.
+@param N One-dimensional array or list containing the number of individual neurons for each population.
+@param l List of firing rates of external inputs (one constant rate per external population/source).
+@param J_int Two-dimensional array containing connection strengths J_int[k,l] for connections of neurons from population l to neurons of population k.
+@param J_ext Two-dimensional array containing connection strengths J_ext[k,m] for connections from external source m to neurons of population k.
+@param I List containing parameters (currents, one value per population) defining properties of the leaky integrate and fire neurons.
+@param gamma List containing parameters (leak-factor?, one value per population) defining properties of the leaky integrate and fire neurons.
+@param K Average number of connections all neurons of one population receive from any other population.
+@param tau Delay between sending and receiving an (internal) spike.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classsystem_1_1WithOutput_abeb008bf9930662467931e61a741b763}{\index{system\-::\-With\-Output@{system\-::\-With\-Output}!run@{run}}
+\index{run@{run}!system::WithOutput@{system\-::\-With\-Output}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-With\-Output.\-run (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{t\-\_\-end, }
+\item[{}]{output\-\_\-dir}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1WithOutput_abeb008bf9930662467931e61a741b763}
+\begin{DoxyVerb}Run the simulation until system time self.t exceeds t_end, creates folder output_dir and writes output to it.
+@param t_end Ending time of the run.
+@param output_dir A string specifying the folder to which the output should be written.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+system.\-py\end{DoxyCompactItemize}

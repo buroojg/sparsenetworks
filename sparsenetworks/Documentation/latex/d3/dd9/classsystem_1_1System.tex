@@ -1,0 +1,269 @@
+\hypertarget{classsystem_1_1System}{\section{system.\-System Class Reference}
+\label{classsystem_1_1System}\index{system.\-System@{system.\-System}}
+}
+Inheritance diagram for system.\-System\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d3/dd9/classsystem_1_1System}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsystem_1_1System_ab84763a8a2fcb9acb23ac66607f426ec}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em Initializes a '\hyperlink{classsystem_1_1System}{System}'-\/object. \end{DoxyCompactList}\item 
+def \hyperlink{classsystem_1_1System_a9ec2f5b1ad6c228001c7f95cc47446a8}{jump\-\_\-to\-\_\-next\-\_\-event}
+\item 
+def \hyperlink{classsystem_1_1System_a41d4bfe3fd30910f8d92b5bf182d862e}{run}
+\begin{DoxyCompactList}\small\item\em Run the simulation until system time self.\-t exceeds t\-\_\-end. \end{DoxyCompactList}\item 
+def \hyperlink{classsystem_1_1System_ad02e76750219966d321e5617e7408e28}{h}
+\begin{DoxyCompactList}\small\item\em Update phases according to function H\-\_\-epsilon(phi) as in 'How chaotic is the balanced state' by Jahnke, Memmesheimer and Timme. \end{DoxyCompactList}\item 
+def \hyperlink{classsystem_1_1System_a5d42184d0107e6c6777ebde19ff2aa8c}{epsilon}
+\begin{DoxyCompactList}\small\item\em Gets the change of the potential for each neuron caused by internal spikes. \end{DoxyCompactList}\item 
+def \hyperlink{classsystem_1_1System_a13682705bf8c3b30abb55ee89fe47e96}{get\-\_\-\-Inter\-Spike\-Interval}
+\begin{DoxyCompactList}\small\item\em Draws a random inter-\/spike interval according to given rate, and already adds it up to current system time. \end{DoxyCompactList}\item 
+def \hyperlink{classsystem_1_1System_aa50493e5779fb6d1e3432be1e2f65605}{get\-\_\-initial\-\_\-\-I\-S\-I}
+\item 
+def \hyperlink{classsystem_1_1System_a91032897c3c698801333653415cc1c73}{create\-\_\-phases}
+\item 
+def \hyperlink{classsystem_1_1System_aed8b22289b24b4c09dcf34911f4645b5}{create\-\_\-ext\-\_\-weight\-\_\-matrix}
+\item 
+def \hyperlink{classsystem_1_1System_a3b3aaa44cf6a8a579e94c7902bbb6473}{create\-\_\-weight\-\_\-matrix}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsystem_1_1System_a9634dee6b17c69008cd4d541a0b3804e}{{\bfseries N}}\label{classsystem_1_1System_a9634dee6b17c69008cd4d541a0b3804e}
+
+\item 
+\hypertarget{classsystem_1_1System_a11da6bee25d85cd983c090bfaa7e6eeb}{{\bfseries N\-\_\-ext}}\label{classsystem_1_1System_a11da6bee25d85cd983c090bfaa7e6eeb}
+
+\item 
+\hypertarget{classsystem_1_1System_a97d1891bb9376b50b453bf9dc7fa5ef1}{{\bfseries tau}}\label{classsystem_1_1System_a97d1891bb9376b50b453bf9dc7fa5ef1}
+
+\item 
+\hyperlink{classsystem_1_1System_ab8fd44fd0fd689735185e83099511489}{I\-\_\-gamma}
+\begin{DoxyCompactList}\small\item\em Holds an array of size N (total number of neurons) containing paraters I and gamma for each neuron. \end{DoxyCompactList}\item 
+\hypertarget{classsystem_1_1System_ac3d311be1a233827da08d861f1ce798c}{{\bfseries t}}\label{classsystem_1_1System_ac3d311be1a233827da08d861f1ce798c}
+
+\item 
+\hypertarget{classsystem_1_1System_a31b7f9e8ccb53a6eab555bfd8ae2af12}{{\bfseries events}}\label{classsystem_1_1System_a31b7f9e8ccb53a6eab555bfd8ae2af12}
+
+\item 
+\hypertarget{classsystem_1_1System_adaa4adc9bda791e92e7b349a8d16e333}{\hyperlink{classsystem_1_1System_adaa4adc9bda791e92e7b349a8d16e333}{rates}}\label{classsystem_1_1System_adaa4adc9bda791e92e7b349a8d16e333}
+
+\begin{DoxyCompactList}\small\item\em one rate value per external population \end{DoxyCompactList}\item 
+\hypertarget{classsystem_1_1System_a049f8551f240a0b4efd269ec4fb3c425}{\hyperlink{classsystem_1_1System_a049f8551f240a0b4efd269ec4fb3c425}{external\-\_\-events}}\label{classsystem_1_1System_a049f8551f240a0b4efd269ec4fb3c425}
+
+\begin{DoxyCompactList}\small\item\em for each external neuron, holds the (arrival) time of its next spike \end{DoxyCompactList}\item 
+\hypertarget{classsystem_1_1System_a58019b9eea1cd90c7a53c5c834fdcf3f}{\hyperlink{classsystem_1_1System_a58019b9eea1cd90c7a53c5c834fdcf3f}{weight\-\_\-matrix}}\label{classsystem_1_1System_a58019b9eea1cd90c7a53c5c834fdcf3f}
+
+\begin{DoxyCompactList}\small\item\em weight matrix, representing the connections and their strengths from any neuron to any other neuron \end{DoxyCompactList}\item 
+\hyperlink{classsystem_1_1System_acb0b0396cccf92c3cd63c17b14660490}{phases}
+\begin{DoxyCompactList}\small\item\em set dt (time to next event) to a random too large value ... \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}System of one or more populations of leaky integrate and fire neurons.
+Neurons share the same statistical properties among one population; they are modeled as leaky integrate and fire neurons in phase representation as in 'How chaotic is the balanced state' by Jahnke, Memmesheimer and Timme.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsystem_1_1System_ab84763a8a2fcb9acb23ac66607f426ec}{\index{system\-::\-System@{system\-::\-System}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!system::System@{system\-::\-System}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-System.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{N = {\ttfamily np.array(\mbox{[}400,100\mbox{]}}, }
+\item[{}]{J\-\_\-int = {\ttfamily None}, }
+\item[{}]{I = {\ttfamily \mbox{[}1.}, }
+\item[{}]{gamma = {\ttfamily \mbox{[}0.2}, }
+\item[{}]{K = {\ttfamily 80}, }
+\item[{}]{tau = {\ttfamily 0.05}, }
+\item[{}]{N\-\_\-ext = {\ttfamily \mbox{[}\mbox{]}}, }
+\item[{}]{J\-\_\-ext = {\ttfamily np.array(\mbox{[}\mbox{]})}, }
+\item[{}]{rates = {\ttfamily \mbox{[}\mbox{]}}}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1System_ab84763a8a2fcb9acb23ac66607f426ec}
+
+
+Initializes a '\hyperlink{classsystem_1_1System}{System}'-\/object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & One-\/dimensional array or list containing the number of individual neurons for each population. \\
+\hline
+{\em l} & List of firing rates of external inputs (one constant rate per external population/source). \\
+\hline
+{\em J\-\_\-int} & Two-\/dimensional array containing connection strengths J\-\_\-int\mbox{[}k,l\mbox{]} for connections of neurons from population l to neurons of population k. \\
+\hline
+{\em J\-\_\-ext} & Two-\/dimensional array containing connection strengths J\-\_\-ext\mbox{[}k,m\mbox{]} for connections from external source m to neurons of population k. \\
+\hline
+{\em I} & List containing parameters (currents, one value per population) defining properties of the leaky integrate and fire neurons. \\
+\hline
+{\em gamma} & List containing parameters (leak-\/factor?, one value per population) defining properties of the leaky integrate and fire neurons. \\
+\hline
+{\em K} & Average number of connections all neurons of one population receive from any other population. \\
+\hline
+{\em tau} & Delay between sending and receiving an (internal) spike. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsystem_1_1System_aed8b22289b24b4c09dcf34911f4645b5}{\index{system\-::\-System@{system\-::\-System}!create\-\_\-ext\-\_\-weight\-\_\-matrix@{create\-\_\-ext\-\_\-weight\-\_\-matrix}}
+\index{create\-\_\-ext\-\_\-weight\-\_\-matrix@{create\-\_\-ext\-\_\-weight\-\_\-matrix}!system::System@{system\-::\-System}}
+\subsubsection[{create\-\_\-ext\-\_\-weight\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-System.\-create\-\_\-ext\-\_\-weight\-\_\-matrix (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{J\-\_\-ext, }
+\item[{}]{K}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1System_aed8b22289b24b4c09dcf34911f4645b5}
+\begin{DoxyVerb}Creates the external weight matrix, that is, weight of connections from each external neuron to each internal neuron.
+
+First, a matrix of random values between 0 and 1 of appropriate size is created. Then, depending on K and the resulting probability to have a connection, the values in the random matrix are set either to 1 or 0 (connection or no connection).
+The connections' weights are then set according to J_ext.
+@param J_ext Array of connection strength, J_ext[j,i] refers to connections from external population i to internal population j.
+@param K Average number of connections one neuron receives from neurons from any other population.
+@return External weight matrix.
+\end{DoxyVerb}
+ \hypertarget{classsystem_1_1System_a91032897c3c698801333653415cc1c73}{\index{system\-::\-System@{system\-::\-System}!create\-\_\-phases@{create\-\_\-phases}}
+\index{create\-\_\-phases@{create\-\_\-phases}!system::System@{system\-::\-System}}
+\subsubsection[{create\-\_\-phases}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-System.\-create\-\_\-phases (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1System_a91032897c3c698801333653415cc1c73}
+\begin{DoxyVerb}Creates an initial random phase for each neuron.
+\end{DoxyVerb}
+ \hypertarget{classsystem_1_1System_a3b3aaa44cf6a8a579e94c7902bbb6473}{\index{system\-::\-System@{system\-::\-System}!create\-\_\-weight\-\_\-matrix@{create\-\_\-weight\-\_\-matrix}}
+\index{create\-\_\-weight\-\_\-matrix@{create\-\_\-weight\-\_\-matrix}!system::System@{system\-::\-System}}
+\subsubsection[{create\-\_\-weight\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-System.\-create\-\_\-weight\-\_\-matrix (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{J\-\_\-int, }
+\item[{}]{K}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1System_a3b3aaa44cf6a8a579e94c7902bbb6473}
+\begin{DoxyVerb}Creates the weight matrix, that is, weight of connections from any internal neuron to each internal neuron.
+
+First, a matrix of random values between 0 and 1 of appropriate size is created. Then, depending on K and the resulting probability to have a connection, the values in the random matrix are set either to 1 or 0 (connection or no connection).
+The connections' weights are then set according to J_ext.
+@param J_ext Array of connection strength, J_ext[j,i] refers to connections from external population i to internal population j.
+@param K Average number of connections one neuron receives from neurons from any other population.
+@return Weight matrix.
+\end{DoxyVerb}
+ \hypertarget{classsystem_1_1System_a5d42184d0107e6c6777ebde19ff2aa8c}{\index{system\-::\-System@{system\-::\-System}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!system::System@{system\-::\-System}}
+\subsubsection[{epsilon}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-System.\-epsilon (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{spike\-\_\-vector}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1System_a5d42184d0107e6c6777ebde19ff2aa8c}
+
+
+Gets the change of the potential for each neuron caused by internal spikes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spike\-\_\-vector} & Vector of spikes; one entry per neuron (=1 if the neuron spikes, =0 if it does not). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+epsilon=change in potential for each neuron. 
+\end{DoxyReturn}
+\hypertarget{classsystem_1_1System_aa50493e5779fb6d1e3432be1e2f65605}{\index{system\-::\-System@{system\-::\-System}!get\-\_\-initial\-\_\-\-I\-S\-I@{get\-\_\-initial\-\_\-\-I\-S\-I}}
+\index{get\-\_\-initial\-\_\-\-I\-S\-I@{get\-\_\-initial\-\_\-\-I\-S\-I}!system::System@{system\-::\-System}}
+\subsubsection[{get\-\_\-initial\-\_\-\-I\-S\-I}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-System.\-get\-\_\-initial\-\_\-\-I\-S\-I (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1System_aa50493e5779fb6d1e3432be1e2f65605}
+\begin{DoxyVerb}Fills self.external_events with initial (arrival) times of each external neurons' spikes.
+\end{DoxyVerb}
+ \hypertarget{classsystem_1_1System_a13682705bf8c3b30abb55ee89fe47e96}{\index{system\-::\-System@{system\-::\-System}!get\-\_\-\-Inter\-Spike\-Interval@{get\-\_\-\-Inter\-Spike\-Interval}}
+\index{get\-\_\-\-Inter\-Spike\-Interval@{get\-\_\-\-Inter\-Spike\-Interval}!system::System@{system\-::\-System}}
+\subsubsection[{get\-\_\-\-Inter\-Spike\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-System.\-get\-\_\-\-Inter\-Spike\-Interval (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{l\-\_\-i}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1System_a13682705bf8c3b30abb55ee89fe47e96}
+
+
+Draws a random inter-\/spike interval according to given rate, and already adds it up to current system time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l\-\_\-i} & Rate of the poissonian firing of the neuron for which the next spiking time is drawn. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Time of next spike. 
+\end{DoxyReturn}
+\hypertarget{classsystem_1_1System_ad02e76750219966d321e5617e7408e28}{\index{system\-::\-System@{system\-::\-System}!h@{h}}
+\index{h@{h}!system::System@{system\-::\-System}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-System.\-h (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{epsilon}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1System_ad02e76750219966d321e5617e7408e28}
+
+
+Update phases according to function H\-\_\-epsilon(phi) as in 'How chaotic is the balanced state' by Jahnke, Memmesheimer and Timme. 
+
+\hypertarget{classsystem_1_1System_a9ec2f5b1ad6c228001c7f95cc47446a8}{\index{system\-::\-System@{system\-::\-System}!jump\-\_\-to\-\_\-next\-\_\-event@{jump\-\_\-to\-\_\-next\-\_\-event}}
+\index{jump\-\_\-to\-\_\-next\-\_\-event@{jump\-\_\-to\-\_\-next\-\_\-event}!system::System@{system\-::\-System}}
+\subsubsection[{jump\-\_\-to\-\_\-next\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-System.\-jump\-\_\-to\-\_\-next\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1System_a9ec2f5b1ad6c228001c7f95cc47446a8}
+\begin{DoxyVerb}One step of simulation; searches for and handles the next event.
+
+Checks whether the next event is the arrival of one or more internal/external spikes or the reset and spike of one or more neurons.
+Updates system time self.t by the difference dt between current time and the event found to happen next.
+\end{DoxyVerb}
+ \hypertarget{classsystem_1_1System_a41d4bfe3fd30910f8d92b5bf182d862e}{\index{system\-::\-System@{system\-::\-System}!run@{run}}
+\index{run@{run}!system::System@{system\-::\-System}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}def system.\-System.\-run (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{t\-\_\-end = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classsystem_1_1System_a41d4bfe3fd30910f8d92b5bf182d862e}
+
+
+Run the simulation until system time self.\-t exceeds t\-\_\-end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\-\_\-end} & Ending time of the run. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsystem_1_1System_ab8fd44fd0fd689735185e83099511489}{\index{system\-::\-System@{system\-::\-System}!I\-\_\-gamma@{I\-\_\-gamma}}
+\index{I\-\_\-gamma@{I\-\_\-gamma}!system::System@{system\-::\-System}}
+\subsubsection[{I\-\_\-gamma}]{\setlength{\rightskip}{0pt plus 5cm}system.\-System.\-I\-\_\-gamma}}\label{classsystem_1_1System_ab8fd44fd0fd689735185e83099511489}
+
+
+Holds an array of size N (total number of neurons) containing paraters I and gamma for each neuron. 
+
+\hypertarget{classsystem_1_1System_acb0b0396cccf92c3cd63c17b14660490}{\index{system\-::\-System@{system\-::\-System}!phases@{phases}}
+\index{phases@{phases}!system::System@{system\-::\-System}}
+\subsubsection[{phases}]{\setlength{\rightskip}{0pt plus 5cm}system.\-System.\-phases}}\label{classsystem_1_1System_acb0b0396cccf92c3cd63c17b14660490}
+
+
+set dt (time to next event) to a random too large value ... 
+
+this will only be used for comparison with time to next emission of spike if there are no other (already emitted) spikes to consider at all check for external event 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+system.\-py\end{DoxyCompactItemize}

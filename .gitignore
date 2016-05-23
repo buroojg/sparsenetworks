@@ -1,0 +1,8 @@
+# distributions created with distutils
+/dist/
+/sparsenetworks.egg-info/
+
+*~
+*.pyc
+*.tar
+*.gz

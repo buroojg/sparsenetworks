@@ -1,0 +1,49 @@
+\hypertarget{namespaceplot__output__separate}{\section{plot\-\_\-output\-\_\-separate Namespace Reference}
+\label{namespaceplot__output__separate}\index{plot\-\_\-output\-\_\-separate@{plot\-\_\-output\-\_\-separate}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceplot__output__separate_a603182846df8849dcd5a3ab336ee003e}{list {\bfseries folder} = sys.\-argv\mbox{[}1\mbox{]}}\label{namespaceplot__output__separate_a603182846df8849dcd5a3ab336ee003e}
+
+\item 
+\hypertarget{namespaceplot__output__separate_a029832f59ed28947bfdf85bc6a14fdc5}{dictionary {\bfseries options} = \{'show'\-:False,'save'\-:True\}}\label{namespaceplot__output__separate_a029832f59ed28947bfdf85bc6a14fdc5}
+
+\item 
+\hypertarget{namespaceplot__output__separate_ae1e61355d5199e72f5c18e4f2b2d1a68}{tuple {\bfseries a} = ana.\-Analyzer(folder)}\label{namespaceplot__output__separate_ae1e61355d5199e72f5c18e4f2b2d1a68}
+
+\item 
+\hypertarget{namespaceplot__output__separate_a664ddd31dddedb676a85f961fb52df8f}{list \hyperlink{namespaceplot__output__separate_a664ddd31dddedb676a85f961fb52df8f}{trains\-\_\-indices} = \mbox{[}$\,$\mbox{]}}\label{namespaceplot__output__separate_a664ddd31dddedb676a85f961fb52df8f}
+
+\begin{DoxyCompactList}\small\item\em -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- spike trains plot -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \end{DoxyCompactList}\item 
+\hypertarget{namespaceplot__output__separate_aec5834229c886ff9e8f72d85a5322686}{tuple {\bfseries rates} = a.\-compute\-\_\-rates(0.\-2)}\label{namespaceplot__output__separate_aec5834229c886ff9e8f72d85a5322686}
+
+\item 
+\hypertarget{namespaceplot__output__separate_ad2ec90ce3d694cb584c1ce1fb0ca6b21}{tuple {\bfseries C\-V} = a.\-compute\-\_\-\-C\-V()}\label{namespaceplot__output__separate_ad2ec90ce3d694cb584c1ce1fb0ca6b21}
+
+\item 
+\hypertarget{namespaceplot__output__separate_a0e50cb28cc4b3b88a1bbdd3fbd7a62f9}{tuple {\bfseries bins} = np.\-linspace(0.\-0,2.\-0,40)}\label{namespaceplot__output__separate_a0e50cb28cc4b3b88a1bbdd3fbd7a62f9}
+
+\item 
+\hypertarget{namespaceplot__output__separate_aa0d6727a27e70d79c2fa08343ec891af}{tuple \hyperlink{namespaceplot__output__separate_aa0d6727a27e70d79c2fa08343ec891af}{phases\-\_\-indices} = r.\-sample(np.\-arange(a.\-parameters\mbox{[}'N'\mbox{]}\mbox{[}\-:i\mbox{]}.sum()+1,a.\-parameters\mbox{[}'N'\mbox{]}\mbox{[}\-:i+1\mbox{]}.sum()+1),5)}\label{namespaceplot__output__separate_aa0d6727a27e70d79c2fa08343ec891af}
+
+\begin{DoxyCompactList}\small\item\em -\/-\/-\/-\/-\/-\/-\/--- phases plot -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Handles plotting of data created with an WithOutput-object.
+
+It creates similar plots as plot_output_total.py, but for separate populations.
+
+Usage: from command line tou can call 'python plot_output_separate.py /directory/where/the/data/is'.
+It is recommended, however, to do it with ipython (because it causes less problems keeping the 
+plots open and doesn't close them immediately again.)
+In ipython call 'run plot_output_separate.py /directory/where/the/data/is'.
+The plots will be saved in the directory of the data.
+By default, it will only save the plots, and not show them while running the script.
+You can, however, pass the option '-show' when calling the script,
+in which case the plots will only be shown, not saved.
+If you also add the option '-save', e.g. '-show -save' or '-save -show',
+the plots will be shown and saved. 
+\end{DoxyVerb}
+ 
